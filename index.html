@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="container">
+        <h1 class="heading">Tic Tac Toe</h1>
+        <div class="game-container">
+            <div class="dropdown">
+                  <span><b>Choose Level</b></span>
+               <div class="dropdown-content">
+                  <p>Easy</p>
+                  <p>Medium</p>
+                  <p>Hard</p>
+               </div>
+            </div>
+            <div id="turn" class="turn">
+                
+            </div>
+            <div class="main">
+                <div class="row" >
+                    <button  id="btn1" class="column" onclick="player1turn('btn1')"></button>
+                    <button  id="btn2" class="column" onclick="player1turn('btn2')"></button>
+                    <button  id="btn3" class="column" onclick="player1turn('btn3')"></button>
+       
+                </div>
+                <div class="row">
+                    <button id="btn4" class="column" onclick="player1turn('btn4')"></button>
+                    <button id="btn5" class="column" onclick="player1turn('btn5')"></button>
+                    <button id="btn6" class="column" onclick="player1turn('btn6')"></button>
+                    
+                </div>
+                <div class="row">
+                    <button id="btn7" class="column" onclick="player1turn('btn7')"></button>
+                    <button id="btn8" class="column" onclick="player1turn('btn8')"></button>
+                    <button id="btn9" class="column" onclick="player1turn('btn9')"></button>
+                    
+                </div>
+            
+            </div>
+
+        </div>
+        <div id="result" class="result">
+
+        </div>
+        <button class="start" id="start" onclick="player1()"><b>Start Game</b></button>
+        <button class="reset" id="reset" onclick="reset()"><b>Reset</b></button>
+
+        <script src="index.js"></script>
+
+    </body>
+</html>
